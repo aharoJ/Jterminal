@@ -40,4 +40,19 @@ public class VoltageLevelAnalyzerTest
     }
 
 
+
+    @Test
+    public void defaultVoltageLowerLimitShouldWork() 
+    {
+        VoltageLevelAnalyzer voltageLevelAnalyzer = new VoltageLevelAnalyzer();
+    
+        assertTrue(VoltageLevelAnalyzer.DANGEROUS_VOLTAGE_DEFAULT_LOWER_LIMIT == voltageLevelAnalyzer.getDangerousVoltageLowerLimit());
+        assertTrue(voltageLevelAnalyzer.isDangerous(voltageLevelAnalyzer.getDangerousVoltageLowerLimit()));
+        assertTrue(voltageLevelAnalyzer.isDangerous(voltageLevelAnalyzer.getDangerousVoltageLowerLimit() + 1));
+        assertFalse(voltageLevelAnalyzer.isDangerous(voltageLevelAnalyzer.getDangerousVoltageLowerLimit() - 1));
+    }        
+
+
+
+
 }
