@@ -1,13 +1,16 @@
 package io.aharoj;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
-    public static void main( String[] args )
+    public boolean isPositive(int number) 
     {
-        System.out.println( "Hello World!" );
+
+        boolean result = false;
+        if (number >= 0) 
+        {
+            result = true;
+        }
+        return result;
+        
     }
 }

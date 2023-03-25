@@ -1,20 +1,17 @@
 package io.aharoj;
-
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void testPositive() 
     {
-        assertTrue( true );
+        App obj = new App();
+        assertEquals(true, obj.isPositive(10));
+
+        //kill mutation #1
+        assertEquals(true, obj.isPositive(0));
     }
 }
