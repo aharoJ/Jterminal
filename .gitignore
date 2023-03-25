@@ -1,0 +1,49 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+####################################
+
+# Ignore gen files
+tools/
+linkFixer.py
+dev/
+link_fixer.py
+zcode/
+
+# ignore ".trash" directory
+/.trash
+
+# Ignore my school stuff
+school/
+
+# Ignore the ".obsidian" folder
+/.obsidian
+
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore vscode stuff
+.vscode
+
+####################################
