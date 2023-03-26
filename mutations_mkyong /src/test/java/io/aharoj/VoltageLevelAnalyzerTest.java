@@ -41,6 +41,7 @@ public class VoltageLevelAnalyzerTest
 
 
 
+    // THIS one cleared and killed all the mutations 
     @Test
     public void defaultVoltageLowerLimitShouldWork() 
     {
@@ -51,8 +52,5 @@ public class VoltageLevelAnalyzerTest
         assertTrue(voltageLevelAnalyzer.isDangerous(voltageLevelAnalyzer.getDangerousVoltageLowerLimit() + 1));
         assertFalse(voltageLevelAnalyzer.isDangerous(voltageLevelAnalyzer.getDangerousVoltageLowerLimit() - 1));
     }        
-
-
-
 
 }
