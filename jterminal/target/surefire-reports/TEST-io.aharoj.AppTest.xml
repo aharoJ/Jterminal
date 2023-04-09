@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="io.aharoj.AppTest" time="0.022" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="io.aharoj.AppTest" time="0.024" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/aharo/desk/research/mutations_mkyong /target/test-classes:/Users/aharo/desk/research/mutations_mkyong /target/classes:/Users/aharo/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/aharo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/aharo/.m2/repository/com/grahamedgecombe/jterminal/jterminal/1.0.1/jterminal-1.0.1.jar:"/>
+    <property name="java.class.path" value="/Users/aharo/desk/research/jterminal/target/test-classes:/Users/aharo/desk/research/jterminal/target/classes:/Users/aharo/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/aharo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
@@ -12,10 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/aharo/desk/research/mutations_mkyong /target/surefire/surefirebooter9660522071683169871.jar /Users/aharo/desk/research/mutations_mkyong /target/surefire 2023-03-28T12-47-10_023-jvmRun1 surefire14990870094337961283tmp surefire_08920269459607587847tmp"/>
+    <property name="sun.java.command" value="/Users/aharo/desk/research/jterminal/target/surefire/surefirebooter7121212714969667519.jar /Users/aharo/desk/research/jterminal/target/surefire 2023-04-09T16-35-44_644-jvmRun1 surefire13310975397341034503tmp surefire_02376523744396617206tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/aharo/desk/research/mutations_mkyong /target/test-classes:/Users/aharo/desk/research/mutations_mkyong /target/classes:/Users/aharo/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/aharo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/aharo/.m2/repository/com/grahamedgecombe/jterminal/jterminal/1.0.1/jterminal-1.0.1.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/aharo/desk/research/jterminal/target/test-classes:/Users/aharo/desk/research/jterminal/target/classes:/Users/aharo/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/aharo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/aharo"/>
     <property name="user.language" value="en"/>
@@ -23,13 +23,13 @@
     <property name="java.version.date" value="2023-01-17"/>
     <property name="java.home" value="/usr/local/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/aharo/desk/research/mutations_mkyong "/>
+    <property name="basedir" value="/Users/aharo/desk/research/jterminal"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/aharo/desk/research/mutations_mkyong /target/surefire/surefirebooter9660522071683169871.jar"/>
+    <property name="surefire.real.class.path" value="/Users/aharo/desk/research/jterminal/target/surefire/surefirebooter7121212714969667519.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.2"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/bc/dvjb0vzj4h70tjxzc23bx0dc0000gn/T/"/>
     <property name="java.version" value="19.0.2"/>
-    <property name="user.dir" value="/Users/aharo/desk/research/mutations_mkyong "/>
+    <property name="user.dir" value="/Users/aharo/desk/research/jterminal"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -58,5 +58,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="testPositive" classname="io.aharoj.AppTest" time="0.003"/>
+  <testcase name="shouldAnswerWithTrue" classname="io.aharoj.AppTest" time="0.003"/>
 </testsuite>
