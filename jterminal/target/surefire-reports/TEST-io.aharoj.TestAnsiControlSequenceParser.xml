@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/aharo/desk/research/jterminal/target/surefire/surefirebooter7121212714969667519.jar /Users/aharo/desk/research/jterminal/target/surefire 2023-04-09T16-35-44_644-jvmRun1 surefire13310975397341034503tmp surefire_02376523744396617206tmp"/>
+    <property name="sun.java.command" value="/Users/aharo/desk/research/jterminal/target/surefire/surefirebooter9752676692388619690.jar /Users/aharo/desk/research/jterminal/target/surefire 2023-04-09T17-19-23_279-jvmRun1 surefire8314181067565708666tmp surefire_08130566928128715150tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/aharo/desk/research/jterminal/target/test-classes:/Users/aharo/desk/research/jterminal/target/classes:/Users/aharo/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/aharo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/aharo/desk/research/jterminal/target/surefire/surefirebooter7121212714969667519.jar"/>
+    <property name="surefire.real.class.path" value="/Users/aharo/desk/research/jterminal/target/surefire/surefirebooter9752676692388619690.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.2"/>
