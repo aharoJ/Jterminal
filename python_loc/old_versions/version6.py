@@ -18,9 +18,9 @@ def count_loc_and_add_comments(file_path):
             current_function = None
             func_loc = 0
 
-        if stripped_line:
+        if stripped_line and not stripped_line.startswith("//"):
             loc += 1
-            new_lines.append(f"{line.rstrip()}\n")
+            new_lines.append(f"{line.rstrip()} // {loc}\n")
 
             if current_function:
                 func_loc += 1
@@ -28,14 +28,10 @@ def count_loc_and_add_comments(file_path):
         else:
             new_lines.append(line)
 
-        function_declaration = re.match(r"public .* (\w+)\([^)]*\)", stripped_line)
-        if function_declaration and not current_function:
+        function_declaration = re.match(r"public .* (\w+)\(.*\)", stripped_line)
+        if function_declaration:
             current_function = function_declaration.group(1)
             func_loc = 1
-
-        # Add the opening brace to the LOC count for the current function
-        if current_function and stripped_line == "{":
-            func_loc += 1
 
     with open(file_path, 'w') as java_file:
         java_file.writelines(new_lines)
@@ -47,4 +43,4 @@ if __name__ == "__main__":
     loc, function_locs = count_loc_and_add_comments(java_file_path)
     print(f"Total LOC in {java_file_path}: {loc}")
     for function, func_loc in function_locs.items():
-        print(f"{function}: {func_loc} LOC")
+        print(f"{function} = {func_loc}")
