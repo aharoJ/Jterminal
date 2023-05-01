@@ -47,4 +47,8 @@ school/
 .vscode
 
 dev/
+
+# Eclipse stuff
+.metadata/
+
 ####################################

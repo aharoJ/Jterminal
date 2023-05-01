@@ -15,6 +15,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <groupId>org.apache.commons</groupId>
@@ -133,6 +134,7 @@
       <email>evanward at apache dot org</email>
     </developer>
   </developers>
+
   <contributors>
     <contributor>
       <name>Eldar Agalarov</name>
@@ -359,6 +361,23 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-maven-plugin -->
+    <!-- <dependency>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>animal-sniffer-maven-plugin</artifactId>
+        <version>1.23</version>
+    </dependency> -->
+
+
+    <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>animal-sniffer-maven-plugin</artifactId>
+      <version>1.23</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/animal-sniffer-maven-plugin-1.23-javadoc.jar</systemPath>
+    </dependency>
+
   </dependencies>
 
   <properties>
@@ -383,8 +402,12 @@
     <commons.jira.id>MATH</commons.jira.id>
     <commons.jira.pid>12310485</commons.jira.pid>
     <commons.encoding>UTF-8</commons.encoding>
-    <maven.compiler.source>1.5</maven.compiler.source>
-    <maven.compiler.target>1.5</maven.compiler.target>
+    
+    <!-- ##############################################################################################################################  -->
+    <!-- ANGEL FIX FOR FASTMATH -->
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+    <!-- ##############################################################################################################################  -->
     <math.pmd.version>3.5</math.pmd.version>
     <math.findbugs.version>3.0.2</math.findbugs.version>
     <math.checkstyle.version>2.17</math.checkstyle.version>
