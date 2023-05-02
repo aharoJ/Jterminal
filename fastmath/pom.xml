@@ -711,6 +711,9 @@
           <additionalparam>-header &apos;&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;&apos;</additionalparam>
         </configuration>
       </plugin>
+
+
+
     </plugins>
   </reporting>
 
@@ -820,6 +823,22 @@
               <excludesFile>${java.io.tmpdir}/${user.name}EkstaziExcludes</excludesFile>
             </configuration>
           </plugin>
+
+          <!-- <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>animal-sniffer-maven-plugin</artifactId>
+              <version>1.14</version>
+              <configuration>
+                <signature>
+                  <groupId>org.codehaus.mojo.signature</groupId>
+                  <artifactId>java80</artifactId>
+                  <version>1.0</version>
+                  <type>signature</type>
+                  <file>/Users/aharo/desk/research/fastmath/lib/animal-sniffer-maven-plugin-1.23-javadoc.jar</file>
+                </signature>
+              </configuration>
+            </plugin>
+             -->
         </plugins>
       </build>
     </profile>
