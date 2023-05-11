@@ -123,6 +123,9 @@ public class JTerminal extends JComponent {
 
 	}
 
+
+
+	
 	/**
 	 * The unique serial version id.
 	 */
@@ -221,6 +224,7 @@ public class JTerminal extends JComponent {
 	public void print(String str) {
 		model.print(str);
 	}
-
 }
+
+
 
