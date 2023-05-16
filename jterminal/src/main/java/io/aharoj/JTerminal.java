@@ -125,7 +125,7 @@ public class JTerminal extends JComponent {
 
 
 
-	
+
 	/**
 	 * The unique serial version id.
 	 */
@@ -147,6 +147,7 @@ public class JTerminal extends JComponent {
 	public JTerminal() {
 		this(new Vt100TerminalModel());
 	}
+
 
 	/**
 	 * Creates a terminal with the specified model.
@@ -225,6 +226,9 @@ public class JTerminal extends JComponent {
 		model.print(str);
 	}
 }
+
+
+
 
 
 

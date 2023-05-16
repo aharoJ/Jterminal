@@ -11,7 +11,6 @@ io/aharoj/bell/BellStrategy.class
 io/aharoj/vt100/AnsiControlSequence.class
 io/aharoj/vt100/AnsiControlSequenceParser.class
 io/aharoj/vt100/AnsiControlSequenceListener.class
-io/aharoj/vt100/Vt100TerminalModel$1.class
 io/aharoj/AbstractTerminalModel.class
 io/aharoj/bell/BeepBellStrategy.class
 io/aharoj/JTerminal$Terminal.class
