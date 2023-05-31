@@ -92,7 +92,7 @@
           <!-- Dr.Ayid added these changes  -->
           <configuration>
             <mutators>
-              <mutator>STRONGER</mutator>
+              <mutator>ALL</mutator>
             </mutators>
           </configuration>
           <!-- Dr.Ayid added these changes  -->

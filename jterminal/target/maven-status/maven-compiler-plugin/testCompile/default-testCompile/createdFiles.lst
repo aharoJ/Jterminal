@@ -1,4 +1,3 @@
 io/aharoj/AppTest.class
 io/aharoj/TestVt100TerminalModel$1.class
-io/aharoj/TestAnsiControlSequenceParser.class
 io/aharoj/TestVt100TerminalModel.class
