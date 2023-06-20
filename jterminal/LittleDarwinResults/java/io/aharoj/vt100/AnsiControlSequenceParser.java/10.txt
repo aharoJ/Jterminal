@@ -1,0 +1,113 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< io.aharoj:jterminal >-------------------------
+[INFO] Building jterminal 0.0.1
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ jterminal ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/aharo/desk/research/jterminal/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ jterminal ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ jterminal ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/aharo/desk/research/jterminal/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ jterminal ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.1:test (default-test) @ jterminal ---
+[WARNING] Parameter 'localRepository' is deprecated core expression; Avoid use of ArtifactRepository type. If you need access to local repository, switch to '${repositorySystemSession}' expression and get LRM from it instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.aharoj.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in io.aharoj.AppTest
+[INFO] Running io.aharoj.TestVt100TerminalModel
+[ERROR] Tests run: 11, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in io.aharoj.TestVt100TerminalModel
+[ERROR] testWordWrapping(io.aharoj.TestVt100TerminalModel)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.aharoj.TerminalCell.getCharacter()" because the return value of "io.aharoj.TerminalModel.getCell(int, int)" is null
+	at io.aharoj.TestVt100TerminalModel.testWordWrapping(TestVt100TerminalModel.java:108)
+
+[ERROR] testSgr(io.aharoj.TestVt100TerminalModel)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at io.aharoj.TestVt100TerminalModel.testSgr(TestVt100TerminalModel.java:323)
+
+[ERROR] testBell(io.aharoj.TestVt100TerminalModel)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<0>
+	at io.aharoj.TestVt100TerminalModel.testBell(TestVt100TerminalModel.java:427)
+
+[INFO] Running io.aharoj.TestAnsiControlSequenceParser
+[ERROR] Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in io.aharoj.TestAnsiControlSequenceParser
+[ERROR] testBrokenSingleSequence(io.aharoj.TestAnsiControlSequenceParser)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<3>
+	at io.aharoj.TestAnsiControlSequenceParser.testBrokenSingleSequence(TestAnsiControlSequenceParser.java:45)
+
+[ERROR] testEmpty(io.aharoj.TestAnsiControlSequenceParser)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<1>
+	at io.aharoj.TestAnsiControlSequenceParser.testEmpty(TestAnsiControlSequenceParser.java:91)
+
+[ERROR] testText(io.aharoj.TestAnsiControlSequenceParser)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<0>
+	at io.aharoj.TestAnsiControlSequenceParser.testText(TestAnsiControlSequenceParser.java:150)
+
+[ERROR] testSingleCsi(io.aharoj.TestAnsiControlSequenceParser)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<2>
+	at io.aharoj.TestAnsiControlSequenceParser.testSingleCsi(TestAnsiControlSequenceParser.java:164)
+
+[ERROR] testParameters(io.aharoj.TestAnsiControlSequenceParser)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<2>
+	at io.aharoj.TestAnsiControlSequenceParser.testParameters(TestAnsiControlSequenceParser.java:130)
+
+[ERROR] testDoubleCsi(io.aharoj.TestAnsiControlSequenceParser)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<2>
+	at io.aharoj.TestAnsiControlSequenceParser.testDoubleCsi(TestAnsiControlSequenceParser.java:183)
+
+[ERROR] testTextAndSequence(io.aharoj.TestAnsiControlSequenceParser)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<3> but was:<2>
+	at io.aharoj.TestAnsiControlSequenceParser.testTextAndSequence(TestAnsiControlSequenceParser.java:102)
+
+[ERROR] testBrokenDoubleSequence(io.aharoj.TestAnsiControlSequenceParser)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<5>
+	at io.aharoj.TestAnsiControlSequenceParser.testBrokenDoubleSequence(TestAnsiControlSequenceParser.java:72)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TestAnsiControlSequenceParser.testBrokenDoubleSequence:72 expected:<1> but was:<5>
+[ERROR]   TestAnsiControlSequenceParser.testBrokenSingleSequence:45 expected:<1> but was:<3>
+[ERROR]   TestAnsiControlSequenceParser.testDoubleCsi:183 expected:<1> but was:<2>
+[ERROR]   TestAnsiControlSequenceParser.testEmpty:91 expected:<0> but was:<1>
+[ERROR]   TestAnsiControlSequenceParser.testParameters:130 expected:<1> but was:<2>
+[ERROR]   TestAnsiControlSequenceParser.testSingleCsi:164 expected:<1> but was:<2>
+[ERROR]   TestAnsiControlSequenceParser.testText:150 expected:<1> but was:<0>
+[ERROR]   TestAnsiControlSequenceParser.testTextAndSequence:102 expected:<3> but was:<2>
+[ERROR]   TestVt100TerminalModel.testBell:427 expected:<1> but was:<0>
+[ERROR]   TestVt100TerminalModel.testSgr:323
+[ERROR] Errors: 
+[ERROR]   TestVt100TerminalModel.testWordWrapping:108 NullPointer Cannot invoke "io.ahar...
+[INFO] 
+[ERROR] Tests run: 20, Failures: 10, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.375 s
+[INFO] Finished at: 2023-06-04T16:19:52-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project jterminal: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/aharo/desk/research/jterminal/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

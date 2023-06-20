@@ -69,25 +69,25 @@ public class TestVt100TerminalModel {
 	@BeforeClass
 	public static void setUpWriter() {
 		try {
-			results_writer = new FileWriter("./test results 2/M94.txt");
+			results_writer = new FileWriter("datacollection/M94.txt");
 		} catch (IOException e) {
 		}
 		test_count = 1;
 	}
 
 	public void printTestOutput(int line_number, Object output) {
-		/*
-		 * try {
-		 * results_writer.write(line_number+", "+output);
-		 * results_writer.write("\n");
-		 * results_writer.flush();
-		 * 
-		 * } catch (IOException e) {
-		 * System.out.println("An error occurred.");
-		 * e.printStackTrace();
-		 * }
-		 * test_count++;
-		 */
+		
+		  try {
+		  results_writer.write(line_number+", "+output);
+		  results_writer.write("\n");
+		  results_writer.flush();
+		  
+		  } catch (IOException e) {
+		  System.out.println("An error occurred.");
+		  e.printStackTrace();
+		  }
+		  test_count++;
+		 
 	}
 
 	/**
@@ -105,7 +105,7 @@ public class TestVt100TerminalModel {
 			printTestOutput(1, e.getClass().getName());
 		}
 		// ----------------------------------------------------------------------
-assertEquals('h', model.getCell(0, 1).getCharacter());//test1
+//assertEquals('h', model.getCell(0, 1).getCharacter());//test1
 	}
 
 	@Test
@@ -134,11 +134,11 @@ assertEquals('h', model.getCell(0, 1).getCharacter());//test1
 			printTestOutput(3, e.getClass().getName());
 		}
 		// ----------------------------------------------------------------------
-assertNull(model.getCell(0, 0));//test2
+//assertNull(model.getCell(0, 0));//test2
 		try {
 			model.print("a\rb\rc");
 			printTestOutput(4, model.getCell(0, 0).getCharacter());
-assertEquals('c', model.getCell(0, 0).getCharacter());// test3
+//assertEquals('c', model.getCell(0, 0).getCharacter());// test3
 		} catch (Exception e) {
 			printTestOutput(4, e.getClass().getName());
 		}
@@ -146,10 +146,10 @@ assertEquals('c', model.getCell(0, 0).getCharacter());// test3
 			model.print("\na");
 			printTestOutput(5, model.getCell(0, 0).getCharacter());
 			// ----------------------------------------------------------------------
-assertEquals('c', model.getCell(0, 0).getCharacter());//test4
+//assertEquals('c', model.getCell(0, 0).getCharacter());//test4
 			printTestOutput(6, model.getCell(0, 1).getCharacter());
 			// ----------------------------------------------------------------------
-assertEquals('a', model.getCell(0, 1).getCharacter());//test5
+//assertEquals('a', model.getCell(0, 1).getCharacter());//test5
 		} catch (Exception e) {
 			printTestOutput(5, e.getClass().getName());
 			printTestOutput(6, e.getClass().getName());
@@ -158,7 +158,7 @@ assertEquals('a', model.getCell(0, 1).getCharacter());//test5
 			model.print("\u007F");
 			printTestOutput(7, model.getCell(0, 1));
 			// ----------------------------------------------------------------------
-assertNull(model.getCell(0, 1));//test6
+//assertNull(model.getCell(0, 1));//test6
 		} catch (Exception e) {
 			printTestOutput(7, e.getClass().getName());
 		}
@@ -166,7 +166,7 @@ assertNull(model.getCell(0, 1));//test6
 			model.print("A\tB");
 			printTestOutput(8, model.getCell(8, 1).getCharacter());
 			// ----------------------------------------------------------------------
-assertEquals('B', model.getCell(8, 1).getCharacter());//test7
+//assertEquals('B', model.getCell(8, 1).getCharacter());//test7
 		} catch (Exception e) {
 			printTestOutput(8, e.getClass().getName());
 		}
@@ -184,7 +184,7 @@ assertEquals('B', model.getCell(8, 1).getCharacter());//test7
 			model.print("And this is line three!");
 			printTestOutput(9, model.getCell(0, 1).getCharacter());
 			// ----------------------------------------------------------------------
-assertEquals('A', model.getCell(0, 1).getCharacter());//test8
+//assertEquals('A', model.getCell(0, 1).getCharacter());//test8
 			printTestOutput(10, model.getCell(23, 1));
 			// ----------------------------------------------------------------------
 //assertNull(model.getCell(23, 1));//test9
@@ -229,7 +229,7 @@ assertEquals('A', model.getCell(0, 1).getCharacter());//test8
 		// ----------------------------------------------------------------------
 		//assertNull(model.getCell(1, 0)); //test12
 		// ----------------------------------------------------------------------
-		assertNull(model.getCell(2, 0)); //test13
+		//assertNull(model.getCell(2, 0)); //test13
 		// ----------------------------------------------------------------------
 		//assertNull(model.getCell(3, 0)); //test14
 		// ----------------------------------------------------------------------
@@ -261,7 +261,7 @@ assertEquals('A', model.getCell(0, 1).getCharacter());//test8
 			model.print("\u009B7C");
 			printTestOutput(15, model.getCursorColumn());
 			// ----------------------------------------------------------------------
-assertEquals(7, model.getCursorColumn());//test18
+//assertEquals(7, model.getCursorColumn());//test18
 		} catch (Exception e) {
 			printTestOutput(15, e.getClass().getName());
 		}
@@ -291,9 +291,9 @@ assertEquals(7, model.getCursorColumn());//test18
 
 			model.print("\u009BF");
 			printTestOutput(19, model.getCursorColumn());
-			assertEquals(0, model.getCursorColumn());// test22
+			//assertEquals(0, model.getCursorColumn());// test22
 			printTestOutput(20, model.getCursorRow());
-			assertEquals(2, model.getCursorRow());// test23
+			//assertEquals(2, model.getCursorRow());// test23
 		} catch (Exception e) {
 			printTestOutput(19, e.getClass().getName());
 			printTestOutput(20, e.getClass().getName());
@@ -302,7 +302,7 @@ assertEquals(7, model.getCursorColumn());//test18
 			model.print("\u009B4;8H");
 			printTestOutput(21, model.getCursorRow());
 			printTestOutput(22, model.getCursorColumn());
-			assertEquals(7, model.getCursorColumn());// test24
+			//assertEquals(7, model.getCursorColumn());// test24
 		} catch (Exception e) {
 			printTestOutput(21, e.getClass().getName());
 			printTestOutput(22, e.getClass().getName());
@@ -320,13 +320,13 @@ assertEquals(7, model.getCursorColumn());//test18
 
 			TerminalCell cell = model.getCell(0, 0);
 			printTestOutput(23, cell);
-			assertNotNull(cell);// test25
+			//assertNotNull(cell);// test25
 			printTestOutput(24, cell.getCharacter());
-			assertEquals('X', cell.getCharacter());// test26
+			//assertEquals('X', cell.getCharacter());// test26
 			printTestOutput(25, cell.getBackgroundColor());
-			assertEquals(Color.RED, cell.getBackgroundColor());// test27
+			//assertEquals(Color.RED, cell.getBackgroundColor());// test27
 			printTestOutput(26, cell.getForegroundColor());
-			assertEquals(Color.YELLOW, cell.getForegroundColor());// test28
+			//assertEquals(Color.YELLOW, cell.getForegroundColor());// test28
 		} catch (Exception e) {
 			printTestOutput(23, e.getClass().getName());
 			printTestOutput(24, e.getClass().getName());
@@ -338,13 +338,13 @@ assertEquals(7, model.getCursorColumn());//test18
 
 			TerminalCell cell = model.getCell(0, 0);
 			printTestOutput(27, cell);
-			assertNotNull(cell);// test29
+			//assertNotNull(cell);// test29
 			printTestOutput(28, cell.getCharacter());
-			assertEquals('X', cell.getCharacter());// test30
+			//assertEquals('X', cell.getCharacter());// test30
 			printTestOutput(29, cell.getBackgroundColor());
-			assertEquals(model.getDefaultBackgroundColor(), cell.getBackgroundColor());// test31
+			//assertEquals(model.getDefaultBackgroundColor(), cell.getBackgroundColor());// test31
 			printTestOutput(30, cell.getForegroundColor());
-			assertEquals(model.getDefaultForegroundColor(), cell.getForegroundColor());
+			//assertEquals(model.getDefaultForegroundColor(), cell.getForegroundColor());
 			// test32
 		} catch (Exception e) {
 			printTestOutput(27, e.getClass().getName());
@@ -371,9 +371,9 @@ assertEquals(7, model.getCursorColumn());//test18
 
 			model.print("\u009Bu");
 			printTestOutput(31, model.getCursorColumn());
-			assertEquals(3, model.getCursorColumn());// test33
+			//assertEquals(3, model.getCursorColumn());// test33
 			printTestOutput(32, model.getCursorRow());
-			assertEquals(17, model.getCursorRow()); // test34
+			//assertEquals(17, model.getCursorRow()); // test34
 		} catch (Exception e) {
 			printTestOutput(31, e.getClass().getName());
 			printTestOutput(32, e.getClass().getName());
@@ -388,11 +388,11 @@ assertEquals(7, model.getCursorColumn());//test18
 		try {
 			model.print("Hi");
 			printTestOutput(33, model.getCell(0, 0).getCharacter());
-			assertEquals('H', model.getCell(0, 0).getCharacter()); // test35
+			//assertEquals('H', model.getCell(0, 0).getCharacter()); // test35
 			printTestOutput(34, model.getCell(1, 0).getCharacter());
-			assertEquals('i', model.getCell(1, 0).getCharacter()); // test36
+			//assertEquals('i', model.getCell(1, 0).getCharacter()); // test36
 			printTestOutput(35, model.getCell(2, 0));
-			assertNull(model.getCell(2, 0)); // test37
+			//assertNull(model.getCell(2, 0)); // test37
 		} catch (Exception e) {
 			printTestOutput(33, e.getClass().getName());
 			printTestOutput(34, e.getClass().getName());
@@ -424,15 +424,14 @@ assertEquals(7, model.getCursorColumn());//test18
 
 			model.print("\u0007");
 			printTestOutput(36, counter[0]);
-			assertEquals(1, counter[0]); // test38
+		//	assertEquals(1, counter[0]); // test38
 
 			model.print("Hello, \u0007World!\u0007\r\n");
 			printTestOutput(37, counter[0]);
-			assertEquals(3, counter[0]); // test39
+		//	assertEquals(3, counter[0]); // test39
 		} catch (Exception e) {
 			printTestOutput(36, e.getClass().getName());
 			printTestOutput(37, e.getClass().getName());
 		}
 	}
-
 }
