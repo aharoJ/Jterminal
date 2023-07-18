@@ -1,7 +1,7 @@
 import os
 import re
 
-def atoi(text):
+def atoi(text): #natural number stuff
     return int(text) if text.isdigit() else text
 
 def natural_keys(text):
@@ -9,7 +9,7 @@ def natural_keys(text):
 
 def file_to_dict(filepath):
     with open(filepath, 'r') as f:
-        return {line.split(',')[0]: line.split(',')[1].strip() for line in f.readlines()}
+        return {line.split(',')[0]: line.split(',')[1].strip() for line in f.readlines()} # 1 2 3 4 5 and soo on...
 
 base_dict = file_to_dict("base/base.txt")
 
