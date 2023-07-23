@@ -4,9 +4,8 @@ mutant type: RelationalOperatorReplacement
 ----> after: 					while ((++cursorColumn % TAB_WIDTH) == 0);
 ----> line number in original file: 219
 ----> mutated node: 2986
+
 */
-
-
 
 /*
  * Copyright (c) 2009-2011 Graham Edgecombe.

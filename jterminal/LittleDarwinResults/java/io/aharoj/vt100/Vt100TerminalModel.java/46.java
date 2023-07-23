@@ -4,9 +4,8 @@ mutant type: RelationalOperatorReplacement
 ----> after: 					for (int row = cursorRow; row >= rows; row++) {
 ----> line number in original file: 153
 ----> mutated node: 2946
+
 */
-
-
 
 /*
  * Copyright (c) 2009-2011 Graham Edgecombe.

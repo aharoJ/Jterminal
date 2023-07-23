@@ -1,9 +1,9 @@
 /* LittleDarwin generated order-1 mutant
-mutant type: ArithmeticOperatorReplacementUnary
-----> before: 		private int savedCursorRow = -1;
-----> after: 		private int savedCursorRow = +1;
-----> line number in original file: 51
-----> mutated node: 1430
+mutant type: ConditionalOperatorReplacement
+----> before: 		if (column < 0 || row < 0 || column >= columns || row >= bufferSize) {
+----> after: 		if (column < 0 || row < 0 && column >= columns || row >= bufferSize) {
+----> line number in original file: 439
+----> mutated node: 1373
 
 */
 
@@ -57,7 +57,7 @@ public class Vt100TerminalModel extends AbstractTerminalModel {
 		/**
 		 * The saved cursor row.
 		 */
-		private int savedCursorRow = +1;
+		private int savedCursorRow = -1;
 
 		/**
 		 * The saved cursor column.
@@ -445,7 +445,7 @@ public class Vt100TerminalModel extends AbstractTerminalModel {
 
 	@Override
 	public void setCell(int column, int row, TerminalCell cell) {
-		if (column < 0 || row < 0 || column >= columns || row >= bufferSize) {
+		if (column < 0 || row < 0 && column >= columns || row >= bufferSize) {
 			throw new IndexOutOfBoundsException();
 		}
 		cells[row][column] = cell;

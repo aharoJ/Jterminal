@@ -4,9 +4,8 @@ mutant type: RelationalOperatorReplacement
 ----> after: 				if (n != 0) {
 ----> line number in original file: 152
 ----> mutated node: 2190
+
 */
-
-
 
 /*
  * Copyright (c) 2009-2011 Graham Edgecombe.

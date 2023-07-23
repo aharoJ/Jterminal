@@ -69,7 +69,7 @@ public class TestVt100TerminalModel {
 	@BeforeClass
 	public static void setUpWriter() {
 		try {
-			results_writer = new FileWriter("datacollection/M94.txt");
+			results_writer = new FileWriter("./M2.txt");
 		} catch (IOException e) {
 		}
 		test_count = 1;
@@ -78,15 +78,15 @@ public class TestVt100TerminalModel {
 	public void printTestOutput(int line_number, Object output) {
 		
 		  try {
-		  results_writer.write(line_number+", "+output);
-		  results_writer.write("\n");
-		  results_writer.flush();
+		 results_writer.write(line_number+", "+output);
+		 results_writer.write("\n");
+		 results_writer.flush();
 		  
 		  } catch (IOException e) {
 		  System.out.println("An error occurred.");
 		  e.printStackTrace();
 		  }
-		  test_count++;
+		 test_count++;
 		 
 	}
 
@@ -261,7 +261,7 @@ public class TestVt100TerminalModel {
 			model.print("\u009B7C");
 			printTestOutput(15, model.getCursorColumn());
 			// ----------------------------------------------------------------------
-//assertEquals(7, model.getCursorColumn());//test18
+assertEquals(7, model.getCursorColumn());//test18
 		} catch (Exception e) {
 			printTestOutput(15, e.getClass().getName());
 		}
@@ -424,11 +424,11 @@ public class TestVt100TerminalModel {
 
 			model.print("\u0007");
 			printTestOutput(36, counter[0]);
-		//	assertEquals(1, counter[0]); // test38
+			//assertEquals(1, counter[0]); // test38
 
 			model.print("Hello, \u0007World!\u0007\r\n");
 			printTestOutput(37, counter[0]);
-		//	assertEquals(3, counter[0]); // test39
+			//assertEquals(3, counter[0]); // test39
 		} catch (Exception e) {
 			printTestOutput(36, e.getClass().getName());
 			printTestOutput(37, e.getClass().getName());
