@@ -3,11 +3,11 @@
 ~/jterminal // LittleDarwin is used here 
 
 ~/playground   // Overall Flow of research + testing + experimentation
- --> DrAyad/ 
- --> datacollection/ 
- --> fastmath/
- --> python_loc/
- --> temp/
+ --> DrAyad/. 
+ --> datacollection/.
+ --> fastmath/.
+ --> python_loc/.
+ --> temp/.
 
 #### DONT CARE FOR INSTRUCTIONS?    
 - [RUN THE SCRIPT](https://github.com/aharoJ/research_mutations#how-to-run-the-script)
