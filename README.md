@@ -10,7 +10,7 @@
  --> temp/
 
 #### DONT CARE FOR INSTRUCTIONS?    
-- 
+- [RUN THE SCRIPT](https://github.com/aharoJ/research_mutations#how-to-run-the-script)
 
 
 ## Script
