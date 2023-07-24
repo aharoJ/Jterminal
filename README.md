@@ -1,6 +1,6 @@
 # Quick Guide
 1. `Git Clone https://github.com/aharoJ/research_mutations.git`
-2. [RUN THE SCRIPT](https://github.com/aharoJ/research_mutations#run-the-script)
+2. [RUN .SH or .PS1 depending on your OS](https://github.com/aharoJ/research_mutations#run-the-script)
 
 
 ## Run the Script
