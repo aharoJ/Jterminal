@@ -1,9 +1,18 @@
 # Quick Guide
 1. `Git Clone https://github.com/aharoJ/research_mutations.git`
-2. [RUN .SH or .PS1 depending on your OS](https://github.com/aharoJ/research_mutations#run-the-script)
+2. Depending on your OS(operating system)
+   1. mac | linux
+      1. `chmod +x setup_unix.sh`.
+      2. run `./setup_unix.sh`
+   2. windows
+      1.  `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
+      2.  `./setup_windows.ps1`
+3. [RUN SCRIPT](https://github.com/aharoJ/research_mutations#run-the-script)
 
 
-## Run the Script
+
+
+## Script Break down Linx | MacOS | Windows
 ### For Unix-based systems (Linux, MacOS)
 To run the setup script on Unix-based systems:
 
