@@ -7,7 +7,6 @@
    2. windows
       1.  `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
       2.  `./setup_windows.ps1`
-3. [RUN SCRIPT](https://github.com/aharoJ/research_mutations#script-break-down-linx--macos--windows)
 
 
 
