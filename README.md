@@ -1,5 +1,5 @@
 # Quick Guide
-1. Git Clone https://github.com/aharoJ/research_mutations.git
+1. `Git Clone https://github.com/aharoJ/research_mutations.git`
 2. [RUN THE SCRIPT](https://github.com/aharoJ/research_mutations#how-to-run-the-script)
 
 ## Run the Script
