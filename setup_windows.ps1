@@ -39,7 +39,7 @@ if (!(Test-Path $deskPath)) {
 $repoPath = Join-Path $deskPath "research_mutations"
 if (!(Test-Path $repoPath)) {
     Set-Location $deskPath
-    git clone git@github.com:aharoJ/research_mutations.git
+    git clone https://github.com/aharoJ/research_mutations.git
     Print-Banner "Repository research_mutations cloned"
 } else {
     Print-Banner "The research_mutations repository has already been cloned"

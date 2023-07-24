@@ -51,7 +51,7 @@ fi
 # Step 2: Clone the git repository if it doesn't already exist
 if [ ! -d ~/desk/research_mutations ]; then
     cd ~/desk
-    git clone git@github.com:aharoJ/research_mutations.git
+    git clone https://github.com/aharoJ/research_mutations.git
     print_banner "Repository research_mutations cloned"
 else
     print_banner "The research_mutations repository has already been cloned"
