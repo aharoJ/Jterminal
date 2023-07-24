@@ -9,6 +9,10 @@
  --> python_loc/
  --> temp/
 
+#### DONT CARE FOR INSTRUCTIONS?    
+- 
+
+
 ## Script
 This project includes a shell script to automate the setup and execution process. Here's what the script does:
 
@@ -34,8 +38,18 @@ Finally, the script runs the command `python3 -m littledarwin -m -b -t ./ -p ./s
 
 
 ## How to Run the Script
-1. Save the script into a file named `script.sh`.
-2. Make the file executable using the command `chmod +x script.sh`.
-3. Execute the script using `./script.sh`.
+### For Unix-based systems (Linux, MacOS)
+To run the setup script on Unix-based systems:
 
-**CAUTION:** Always review any scripts before running them to ensure they're safe and won't harm your system or data. This script assumes you're okay with it making changes to your system (like installing pip3 and creating directories).
+1. Save the script into a file named `setup_unix.sh`.
+2. Make the file executable using the command `chmod +x setup_unix.sh`.
+3. Execute the script using `./setup_unix.sh`.
+
+### For Windows systems
+To run the setup script on Windows systems:
+
+1. Save the script into a file named `setup_windows.ps1`.
+2. Make sure your PowerShell execution policy allows the execution of scripts. You might need to change it using `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`.
+3. Execute the script using `./setup_windows.ps1`.
+
+**CAUTION:** Always review any scripts before running them to ensure they're safe and won't harm your system or data. These scripts assume you're okay with them making changes to your system (like installing `pip3` and creating directories).

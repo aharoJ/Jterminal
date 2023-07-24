@@ -9,8 +9,7 @@ print_banner() {
     echo "--------------------------------------------------------------------------------"
 }
 
-
-# Function to check Java version
+#################################   Function to check Java version    ########################################################
 check_java_version() {
     local version=$(java -version 2>&1 | awk -F '"' '/version/ {print $2}' | awk -F '.' '{print $1}')
     echo "Java major version: $version"
@@ -19,6 +18,24 @@ check_java_version() {
         exit 1
     fi
 }
+
+##############################  Determine OS  #########################################################################
+if [ "$(uname)" == "Darwin" ]; then
+    # MacOS
+    echo "It seems you are running MacOS. Please execute the setup_macos.sh script."
+    echo "Run the command: ./setup_macos.sh"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # Linux
+    echo "It seems you are running Linux. Please execute the setup_macos.sh script."
+    echo "Run the command: ./setup_macos.sh"
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ] || [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
+    # Windows
+    echo "It seems you are running Windows. Please execute the setup_windows.ps1 script."
+    echo "Run the command: ./setup_windows.ps1 (in PowerShell)"
+else
+    echo "Unknown operating system."
+fi
+########################################################################################################################
 
 
 # Step 0: Check Java version

@@ -7,40 +7,25 @@ Function Print-Banner {
     Write-Host "--------------------------------------------------------------------------------"
 }
 
-########################################################################################################################
-# Determine OS
-if [ "$(uname)" == "Darwin" ]; then
-    # MacOS
-    echo "It seems you are running MacOS. Please execute the setup_macos.sh script."
-    echo "Run the command: ./setup_macos.sh"
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    # Linux
-    echo "It seems you are running Linux. Please execute the setup_macos.sh script."
-    echo "Run the command: ./setup_macos.sh"
-elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ] || [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
-    # Windows
-    echo "It seems you are running Windows. Please execute the setup_windows.ps1 script."
-    echo "Run the command: ./setup_windows.ps1 (in PowerShell)"
-else
-    echo "Unknown operating system."
-fi
-########################################################################################################################
-
-# Function to check Java version
-check_java_version() {
-    local version=$(java -version 2>&1 | awk -F '"' '/version/ {print $2}')
-    echo "Java version: $version"
-    if [[ "$version" < "11" ]]; then
-        echo "Java version is less than 11. Please upgrade to at least Java 11."
-        exit 1
-    elif [[ "$version" > "11" ]]; then
-        echo "Java version is greater than 11. The script may not work correctly."
-        exit 1
-    fi
+##############################  Determine OS  #########################################################################
+if ($PSVersionTable.PSVersion.Major -lt 5) {
+    Write-Output "It seems you are not running PowerShell 5 or higher. Please upgrade your PowerShell version."
+} else {
+    switch ($PSVersionTable.Platform) {
+        "Unix" {
+            Write-Output "It seems you are running Linux or MacOS. Please execute the setup_macos.sh script."
+            Write-Output "Run the command: ./setup_macos.sh"
+        }
+        "Win32NT" {
+            Write-Output "It seems you are running Windows. Please execute the setup_windows.ps1 script."
+            Write-Output "Run the command: ./setup_windows.ps1"
+        }
+        default {
+            Write-Output "Unknown operating system."
+        }
+    }
 }
-
-# Step 0: Check Java version
-check_java_version
+########################################################################################################################
 
 
 # Step 1: Ensure the ~/desk directory exists
