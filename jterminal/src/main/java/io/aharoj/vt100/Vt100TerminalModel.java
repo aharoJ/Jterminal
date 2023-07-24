@@ -1,12 +1,3 @@
-/* LittleDarwin generated order-1 mutant
-mutant type: ConditionalOperatorReplacement
-----> before: 		if (column < 0 || row < 0 || column >= columns || row >= bufferSize) {
-----> after: 		if (column < 0 || row < 0 && column >= columns || row >= bufferSize) {
-----> line number in original file: 439
-----> mutated node: 1373
-
-*/
-
 /*
  * Copyright (c) 2009-2011 Graham Edgecombe.
  *
@@ -445,7 +436,7 @@ public class Vt100TerminalModel extends AbstractTerminalModel {
 
 	@Override
 	public void setCell(int column, int row, TerminalCell cell) {
-		if (column < 0 || row < 0 && column >= columns || row >= bufferSize) {
+		if (column < 0 || row < 0 || column >= columns || row >= bufferSize) {
 			throw new IndexOutOfBoundsException();
 		}
 		cells[row][column] = cell;
