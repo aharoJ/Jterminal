@@ -1,14 +1,23 @@
-## mutation_research
+# Quick Guide
+1. Git Clone https://github.com/aharoJ/research_mutations.git
+2. [RUN THE SCRIPT](https://github.com/aharoJ/research_mutations#how-to-run-the-script)
 
-~/jterminal // root directory for script
+## Run the Script
+### For Unix-based systems (Linux, MacOS)
+To run the setup script on Unix-based systems:
 
-~/playground   // Overall Flow of research + testing + experimentation
+1. Save the script into a file named `setup_unix.sh`.
+2. Make the file executable using the command `chmod +x setup_unix.sh`.
+3. Execute the script using `./setup_unix.sh`.
 
-#### DONT CARE FOR INSTRUCTIONS?    
-- [RUN THE SCRIPT](https://github.com/aharoJ/research_mutations#how-to-run-the-script)
+### For Windows systems
+To run the setup script on Windows systems:
 
+1. Save the script into a file named `setup_windows.ps1`.
+2. Make sure your PowerShell execution policy allows the execution of scripts. You might need to change it using `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`.
+3. Execute the script using `./setup_windows.ps1`.
 
-## Script
+## Script Docs
 This project includes a shell script to automate the setup and execution process. Here's what the script does:
 
 ### 1. Create a 'desk' directory
@@ -32,19 +41,5 @@ Finally, the script runs the command `python3 -m littledarwin -m -b -t ./ -p ./s
 **NOTE:** Be sure to replace 'jterminal' and 'research/jterminal' with the correct paths according to your directory structure.
 
 
-## How to Run the Script
-### For Unix-based systems (Linux, MacOS)
-To run the setup script on Unix-based systems:
-
-1. Save the script into a file named `setup_unix.sh`.
-2. Make the file executable using the command `chmod +x setup_unix.sh`.
-3. Execute the script using `./setup_unix.sh`.
-
-### For Windows systems
-To run the setup script on Windows systems:
-
-1. Save the script into a file named `setup_windows.ps1`.
-2. Make sure your PowerShell execution policy allows the execution of scripts. You might need to change it using `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`.
-3. Execute the script using `./setup_windows.ps1`.
 
 **CAUTION:** Always review any scripts before running them to ensure they're safe and won't harm your system or data. These scripts assume you're okay with them making changes to your system (like installing `pip3` and creating directories).
