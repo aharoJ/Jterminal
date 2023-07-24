@@ -7,6 +7,7 @@
    2. windows
       1.  `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
       2.  `./setup_windows.ps1`
+          1.  [issues](https://stackoverflow.com/questions/4037939/powershell-says-execution-of-scripts-is-disabled-on-this-system)
 
 
 
