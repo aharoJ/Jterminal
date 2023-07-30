@@ -5,11 +5,11 @@
 7, null
 8, B
 1, h
-23, io.aharoj.TerminalCell@4e04a765
+23, io.aharoj.TerminalCell@1e67b872
 24, X
-25, java.awt.Color[r=128,g=128,b=128]
-26, java.awt.Color[r=0,g=255,b=255]
-27, io.aharoj.TerminalCell@6b143ee9
+25, java.awt.Color[r=255,g=0,b=0]
+26, java.awt.Color[r=255,g=255,b=0]
+27, io.aharoj.TerminalCell@6df97b55
 28, X
 29, java.awt.Color[r=0,g=0,b=0]
 30, java.awt.Color[r=192,g=192,b=192]
