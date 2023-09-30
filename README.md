@@ -53,3 +53,6 @@ Finally, the script runs the command `python3 -m littledarwin -m -b -t ./ -p ./s
 
 
 **CAUTION:** Always review any scripts before running them to ensure they're safe and won't harm your system or data. These scripts assume you're okay with them making changes to your system (like installing `pip3` and creating directories).
+
+## References
+BLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAH
