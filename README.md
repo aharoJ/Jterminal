@@ -56,3 +56,6 @@ Finally, the script runs the command `python3 -m littledarwin -m -b -t ./ -p ./s
 
 ## References
 BLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAH
+
+## Enviroment Script
+BLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAH
