@@ -1,3 +1,12 @@
+/* LittleDarwin generated order-1 mutant
+mutant type: RelationalOperatorReplacement
+----> before: 		if (parameters == null) {
+----> after: 		if (parameters != null) {
+----> line number in original file: 46
+----> mutated node: 150
+
+*/
+
 /*
  * Copyright (c) 2009-2011 Graham Edgecombe.
  *
@@ -43,7 +52,7 @@ public class AnsiControlSequence {
 	 * @throws NullPointerException if the parameters array is {@code null}.
 	 */
 	public AnsiControlSequence(char command, String[] parameters) {
-		if (parameters == null) {
+		if (parameters != null) {
 			throw new NullPointerException("parameters");
 		}
 		this.command = command;
