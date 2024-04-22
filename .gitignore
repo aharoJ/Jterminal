@@ -23,19 +23,8 @@
 hs_err_pid*
 
 ####################################
-
-# Ignore gen files
-tools/
-linkFixer.py
-dev/
-link_fixer.py
-zcode/
-
 # ignore ".trash" directory
 /.trash
-
-# Ignore my school stuff
-school/
 
 # Ignore the ".obsidian" folder
 /.obsidian
@@ -45,8 +34,6 @@ school/
 
 # Ignore vscode stuff
 .vscode
-
-dev/
 
 # Eclipse stuff
 .metadata/
