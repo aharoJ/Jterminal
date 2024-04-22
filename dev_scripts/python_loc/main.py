@@ -43,7 +43,7 @@ def count_loc_and_add_comments(file_path):
     return loc, function_locs
 
 if __name__ == "__main__":
-    java_file_path = "dev_scripts/python_loc/Checker.java"
+    java_file_path = "dev_scripts/python_loc/JavaFunctionSamples.java"
     loc, function_locs = count_loc_and_add_comments(java_file_path)
     print(f"Total LOC in {java_file_path}: {loc}")
     for function, func_loc in function_locs.items():
