@@ -1,61 +1,86 @@
-# Quick Guide
-1. `Git Clone https://github.com/aharoJ/research_mutations.git`
-2. Depending on your OS(operating system)
-   1. mac | linux
-      1. `chmod +x setup_unix.sh`.
-      2. run `./setup_unix.sh`
-   2. windows
-      1.  `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-      2.  `./setup_windows.ps1`
-          1.  [issues](https://stackoverflow.com/questions/4037939/powershell-says-execution-of-scripts-is-disabled-on-this-system)
+# Research Mutations Project Setup
 
+This guide provides instructions for setting up and running the Research Mutations project on macOS or Ubuntu Linux environments. Ensure that you follow these steps after cloning the repository to your local machine.
 
+## Prerequisites
 
+- Java 17
+- Maven
+- Python 3
+- Git (for cloning the repository, if not already done)
 
-## Script Break down Linx | MacOS | Windows
-### For Unix-based systems (Linux, MacOS)
-To run the setup script on Unix-based systems:
+![alt text](public/research.gif)
 
-1. Save the script into a file named `setup_unix.sh`.
-2. Make the file executable using the command `chmod +x setup_unix.sh`.
-3. Execute the script using `./setup_unix.sh`.
+## Installation
 
-### For Windows systems
-To run the setup script on Windows systems:
+### 1. Clone the Repository
 
-1. Save the script into a file named `setup_windows.ps1`.
-2. Make sure your PowerShell execution policy allows the execution of scripts. You might need to change it using `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`.
-3. Execute the script using `./setup_windows.ps1`.
+Before running the setup script, you need to clone the Research Mutations repository:
 
-## Script Docs
-This project includes a shell script to automate the setup and execution process. Here's what the script does:
+```bash
+git clone https://github.com/aharoJ/Jterminal.git
+```
 
-### 1. Create a 'desk' directory
-The script creates a directory named 'desk' in your home directory.
+```
+cd Jterminal
+``
+```
 
-### 2. Clone Git Repository
-The script clones the git repository aharoJ/research_mutations into the 'desk' directory.
+### 2. Run Setup Script
 
-### 3. Execute Maven Commands
-The script navigates into the cloned repository and executes a series of Maven commands. These commands include: `mvn clean`, `mvn package`, and `mvn compile`.
+From the root directory of the cloned repository, run the following command to execute the setup script:
 
-### 4. Install Pip3 and littledarwin
-The script checks if pip3 (Python's package installer) is installed. If not, the script will download and install it. After this, it will use pip3 to install 'littledarwin'.
+```bash
+./setup.sh
+```
 
-### 5. Change Directory
-The script changes the working directory to 'jterminal' (if it exists in your home directory) or 'research/jterminal' (if 'jterminal' doesn't exist). 
+This script performs several actions:
 
-### 6. Run littledarwin
-Finally, the script runs the command `python3 -m littledarwin -m -b -t ./ -p ./src/main`.
+- Checks if you have the correct version of Java installed.
+- Executes Maven commands to clean, compile, and package the application.
+- Ensures Python 3 and pip are installed.
+- Installs the LittleDarwin mutation testing tool.
 
-**NOTE:** Be sure to replace 'jterminal' and 'research/jterminal' with the correct paths according to your directory structure.
+## Usage
 
+After completing the setup, the project should be fully configured. You can start using the Research Mutations tools according to the project's intended usage patterns.
 
+### Running Mutation Tests
 
-**CAUTION:** Always review any scripts before running them to ensure they're safe and won't harm your system or data. These scripts assume you're okay with them making changes to your system (like installing `pip3` and creating directories).
+To run mutation tests with LittleDarwin, use the following command in the project's root directory:
 
-## References
-BLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAH
+```bash
+python3 -m littledarwin -m -b -t ./ -p ./src/main
+```
 
-## Enviroment Script
-BLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAHBLAH
+This command executes the mutation testing process on the specified source directory.
+
+## Dev Tools
+
+### data_comparison
+
+> for researchers
+
+- input the base file/(s) within the `base_file` directory
+- input the m_files within the `m_files` directory
+
+### python_loc
+
+- reads lines of code in TOTAL
+- read lines of code per FUNCTION
+- returns all functions LOC && total LOC per class
+
+## Dev Tools
+
+### data_comparison
+
+> for researchers
+
+- input the base file/(s) within the `base_file` directory
+- input the m_files within the `m_files` directory
+
+### python_loc
+
+- reads lines of code in TOTAL
+- read lines of code per FUNCTION
+- returns all functions LOC && total LOC per class
