@@ -2,16 +2,12 @@
 
 This guide provides instructions for setting up and running the Research Mutations project on macOS or Ubuntu Linux environments. Ensure that you follow these steps after cloning the repository to your local machine.
 
-![alt text](public/research.gif)
-
 ## Prerequisites
 
 - Java 17
 - Maven
 - Python 3
 - Git (for cloning the repository, if not already done)
-
-![alt text](public/research.gif)
 
 ## Installation
 
