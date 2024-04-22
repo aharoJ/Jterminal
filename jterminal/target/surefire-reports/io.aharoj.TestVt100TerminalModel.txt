@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: io.aharoj.TestVt100TerminalModel
--------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in io.aharoj.TestVt100TerminalModel
-=======
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in io.aharoj.TestVt100TerminalModel
->>>>>>> 94e3e0b (...aharoJ)
