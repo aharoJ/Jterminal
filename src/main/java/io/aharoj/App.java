@@ -1,8 +1,9 @@
 package io.aharoj;
 
 /**
- * Hello world!
  *
+ * @author for mutation research Angel J. Haro
+ * @see https://aharoj.io/
  */
 public class App 
 {
