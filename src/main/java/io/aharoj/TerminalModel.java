@@ -29,6 +29,8 @@ import io.aharoj.bell.BellStrategy;;
 /**
  * Model for terminals - defines methods for getting/setting cells, printing
  * text to a terminal and getting the size of the terminal and buffer.
+ * @author for mutation research Angel J. Haro
+ * @see https://aharoj.io/
  */
 public interface TerminalModel {
 
