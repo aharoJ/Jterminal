@@ -2,6 +2,7 @@
 
 This guide provides instructions for setting up and running the Research Mutations project on macOS or Ubuntu Linux environments. Ensure that you follow these steps after cloning the repository to your local machine.
 
+![alt text](public/research.png)
 
 ## Prerequisites
 
@@ -42,8 +43,9 @@ This script performs several actions:
 
 ### script outputs
 
-- a M2.txt
-  > depending on your hardware, it can take 1 min to 10 min
+a M2.txt
+
+> depending on your hardware, it can take 1 min to 10 min
 
 ---
 
@@ -70,6 +72,10 @@ Contributing
 
 Contributions to the Jterminal Mutation Research project are welcome. Please fork the repository and submit pull requests with any enhancements or bug fixes. If you would like to work directory with
 [Dr.Ayad](https://www.kean.edu/academics/college-science-mathematics-and-technology/department-computer-science-and-technology-1) please email her.
+
+
+---
+
 
 ## Dev Tools
 
