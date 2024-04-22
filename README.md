@@ -9,7 +9,7 @@ This guide provides instructions for setting up and running the Research Mutatio
 - Java 17
 - Maven
 - Python 3
-- Git (for cloning the repository, if not already done)
+- Pip
 
 ## Installation
 
