@@ -28,6 +28,8 @@ import java.awt.Color;
  * Represents a single terminal cell which contains a character, background
  * color and foreground color.
  * @author Graham Edgecombe
+ * @author for mutation research Angel J. Haro
+ * @see https://aharoj.io/
  */
 public class TerminalCell {
 
