@@ -25,6 +25,8 @@ package io.aharoj;
 /**
  * A {@link TerminalModel} which implements some common behaviour.
  * @author Graham Edgecombe
+ * @author for mutation research Angel J. Haro
+ * @see https://aharoj.io/
  */
 public abstract class AbstractTerminalModel implements TerminalModel {
 
