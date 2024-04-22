@@ -36,6 +36,8 @@ import io.aharoj.vt100.Vt100TerminalModel;
 /**
  * A Swing terminal emulation component.
  * @author Graham Edgecombe
+ * @author for mutation research Angel J. Haro
+ * @see https://aharoj.io/
  */
 public class JTerminal extends JComponent {
 
