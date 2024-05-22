@@ -13,6 +13,12 @@ This guide provides instructions for setting up and running the Research Mutatio
 
 ---
 
+![alt text](public/mutation.png)
+
+---
+
+
+
 ## Installation
 
 ### 1. Clone the Repository
