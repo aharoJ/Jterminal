@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: io.aharoj.TestVt100TerminalModel
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.035 s <<< FAILURE! - in io.aharoj.TestVt100TerminalModel
+testErase(io.aharoj.TestVt100TerminalModel)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NullPointerException: parameters
+	at io.aharoj.TestVt100TerminalModel.testErase(TestVt100TerminalModel.java:229)
+
