@@ -39,6 +39,5 @@ public interface AnsiControlSequenceListener {
 	 * @param str The string.
 	 */
 	public void parsedString(String str);
-
 }
 
